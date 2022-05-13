@@ -1,0 +1,29 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+fieldset {
+    margin: 2em 0;
+}
+
+fieldset > div {
+    margin: 1em 0;
+}
+
+.error {
+    /* Classe pour les message d'erreur  */
+    color: red;
+    font-weight: bold;
+}
+
+label {
+    display: inline-block;
+    width: 20em;
+}
+
+p {
+    display: grid;
+    column-gap: 1em;
+    grid-template-columns: auto auto 1fr;
+    align-items: center;
+}
