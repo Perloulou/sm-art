@@ -14,7 +14,7 @@ try{
 // REQUETE DELETE
 $query = <<<EOT
     DELETE FROM produit
-    WHERE `nom`='truc';
+    WHERE `id_produit`='14';
   EOT;
 $res = $conn->query($query);
 // Vérification de la requête

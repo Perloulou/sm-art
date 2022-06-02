@@ -16,7 +16,7 @@ $query = <<<EOT
     INSERT INTO `produit`
     (`nom`, `marque`, `prix`, `stock`, `categorie`, `image`)
     VALUES
-    ('Nom1',  'marque1', 56, 6, 'peinture', NULL);
+    ('4 crayons graphique',  'Monali', 2.99, 6, 'crayons', NULL);
   EOT;
 
 $res = $conn->query($query);

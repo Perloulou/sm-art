@@ -4,8 +4,8 @@ if (!(isset($_POST["mail"]) &&
     $_POST["mail"] != "" &&
     isset($_POST["login"]) &&
     $_POST["login"] != "" &&
-    isset($_POST["pswd"]) &&
-    $_POST["pswd"] != "" &&
+    isset($_POST["mdp"]) &&
+    $_POST["mdp"] != "" &&
     isset($_POST["nom"]) &&
     $_POST["nom"] != "" &&
     isset($_POST["prenom"]) &&
@@ -17,7 +17,7 @@ if (!(isset($_POST["mail"]) &&
 }
 $m = $_POST["mail"];
 $l = $_POST["login"];
-$p = $_POST["pswd"];
+$p = $_POST["mdp"];
 $o = $_POST["prenom"];
 $n = $_POST["nom"];
 

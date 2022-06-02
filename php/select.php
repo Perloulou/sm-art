@@ -36,17 +36,20 @@ function affichetab($db) {
     echo "<th>image</th>";
     echo "</tr>";
 
-    for ($k=0; $k<sizeof($rows); $k++) {
-        echo "<tr>";
-        echo '<td>'.$rows[$k]['num'].'</td>';
-        echo '<td>'.$rows[$k]['nom'].'</td>';
-        echo '<td>'.$rows[$k]['marque'].'</td>';
-        echo '<td>'.$rows[$k]['prix'].'</td>';
-        echo '<td>'.$rows[$k]['stock'].'</td>';
-        echo '<td>'.$rows[$k]['categorie'].'</td>';
-        echo '<td>'.$rows[$k]['image'].'</td>';
-        echo "</tr>";
+    /*for ($k=0; $k<sizeof($rows); $k++) {
+
+        echo <<<EOT
+        <tr>
+        <td>{$rows['id_produit']}</td>
+        <td>{$rows['nom']}</td>
+        <td>{$rows['marque']}</td>
+        <td>{$rows['prix']}</td>
+        <td>{$rows['stock']}</td>
+        <td>{$rows['categorie']}</td>
+        <td>{$rows['image']}</td>
+        </tr>
     }
-    echo "</table>";
+    EOT;
+    echo "</table>";*/
 }
 affichetab($rows);

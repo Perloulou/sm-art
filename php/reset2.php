@@ -10,7 +10,7 @@ try{
 }
 
 
-$query = file_get_contents('../db1.sql');
+$query = file_get_contents('../db2.sql');
 $queries = preg_split('~^\([^)]*\)(*SKIP)(*F)|;~', $query);
 array_pop($queries);
 foreach ($queries as $req) {

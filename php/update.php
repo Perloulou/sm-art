@@ -13,9 +13,9 @@ try{
 // REQUETE UPDATE
 $query = <<<EOT
     UPDATE produit
-    SET `marque`='truc' 
+    SET `prix`='21.2' 
     WHERE
-    `nom`='test';
+    `id_produit`='6';
   EOT;
 $res = $conn->query($query);
 // Vérification de la requête
