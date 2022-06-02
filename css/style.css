@@ -1,47 +1,85 @@
-main, header, footer {
-    margin: 1em;
-    padding: 1em;
-    border-radius: 10px;
-    background-color: #f2f2f2;
-}
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Dancing+Script&family=Lato&display=swap');
 
 
 /* Header */
-.titre{
-    text-align: center;
-    vertical-align: middle;
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
-.titre a{
-    font-size: 1em;
-    text-decoration: none;
+.main {
+    flex-grow: 1;
 }
 
 #logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 30%;
 }
+
 /* Fin du header */
 
 /* Barre de navigation */
 nav {
-    padding: 10px;
-    display: flex;
-    position: sticky;
-    top: 0;
-}
-
-nav a{
-    text-decoration: none;
-    font-size: 1.2em;
-}
-
-nav a:hover {
-    color: #5ba2a2;
-}
-
-nav {
+    padding: 1em;
     text-align: center;
 }
+
+.nav-link{
+    text-decoration: none;
+    color: #5ba2a2 !important;
+    font-size: 1.2em;
+    font-family: 'Lato', sans-serif;
+}
+
+.nav-link:hover {
+    color: #488181 !important;
+}
+
+.activel {
+    font-weight: bold !important;
+}
+
 /* Fin de la barre de navigation */
+
+
+/* Contenu principal */
+h2 {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.3em;
+    color: #5ba2a2;
+    padding: 0.5em;
+}
+
+main{
+    padding: 1em;
+    margin: 1em;
+}
+
+a{
+    color: #00c0a4;
+}
+
+/* Fin du contenu principal */
+
+
+/* Pied de page */
+footer {
+    text-align : center;
+    padding: 1em;
+    background-color: rgba(248, 249, 250, 1);
+    bottom:0;
+    width:100%;
+    margin-top:auto;
+}
+
+.footer_img{
+    display:block;
+    width:30px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/* Fin du pied de page */
