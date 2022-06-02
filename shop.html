@@ -1,10 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+<html lang="fr">
 
+<head>
+	<meta charset="utf-8">
+	<title>Boutique</title>
+	<link rel="stylesheet" type="text/css" href="./css/shop.css">
+	<link rel="stylesheet" type="text/css" href="./css/grille_chota.css">
+	<link rel="icon" href="./images/logo.png">
+</head>
+
+<body>
+	<header>
+		<p><img id="logo" src="./images/logo.png" alt="logo site"></p>
+		<h1 class="titre"> <a href="./index.html">Sm'Art</a></h1>
+
+		<!-- Barre de navigation -->
+		<nav>
+			<div class="row">             
+				<div class="col-3">
+          			<a href="./index.html">Acceuil</a>
+       			</div>
+
+				<div class="col-3">
+					<a href="./shop.html">Boutique</a>
+				</div>
+
+				<div class="col-3">
+					<a href="./panier.html">Panier</a>
+				</div>
+
+				<div class="col-3">
+					<a href="./contact.html">Contact</a>
+				</div>
+			</div>
+		</nav>
+			<!-- Fin de la barre de navigation -->
+	</header>
+
+	<main>
+		<h2>Boutique</h2>
+		<table>
+			<tr class="product">
+				<td class="product-img"><a href="./panier.html"><img src="./images/carnet.png" alt="carnet"></a></td>
+				<td class="product-img"><a href="./panier.html"><img src="./images/gobelet.png" alt="gobelet"></a></td>
+				<td class="product-img"><a href="./panier.html"><img src="./images/crayons.png" alt="crayons"></a></td>
+				<td class="product-img"><a href="./panier.html"><img src="./images/palette.png" alt="palette"></a></td>
+			</tr>
+			<tr class="product">
+				<td class="product-name">Bloc multi-technique XL Mix media <br>Canson</td>
+				<td class="product-name">Gobelet à eau pliable Clic&Go <br>Faber-Castell</td>
+				<td class="product-name">Crayons de couleur Polychromos, 36 pièces <br>Faber-Castell</td>
+				<td class="product-name">Aquarelle boîte de poche esquisse Cotman <br>Winsor&Newton</td>
+			</tr>
+			<tr class="product">
+				<td class="product-id">173569</td>
+				<td class="product-id">181510</td>
+				<td class="product-id">110036</td>
+				<td class="product-id">124742</td>
+			</tr>
+			<tr class="product">
+				<td class="product-tags">Papier</td>
+				<td class="product-tags">Accesoires</td>
+				<td class="product-tags">Crayons</td>
+				<td class="product-tags">Peinture</td>
+			</tr>
+			<tr class="product">
+				<td class="product-price">14,95€</td>
+				<td class="product-price">3,30€</td>
+				<td class="product-price">65,00€</td>
+				<td class="product-price">17,90€</td>
+			</tr>
+		</table>
+		
+
+	</main>
+
+	<footer>
+		<p>Rejoignez-nous</p>
+		<div class="row liens">
+			<div class="col-3" >
+				<a href="http://facebook.com" target="_blank"><img src="./images/facebook.svg" class="footer_img" alt="logo_facebook"></a>
+			</div>
+
+			<div class="col-3" >
+				<a href="http://pinterest.fr" target="_blank"><img src="./images/pinterest.svg" class="footer_img" alt="logo_pinterest"></a>
+			</div>
+
+			<div class="col-3" >
+				<a href="http://twitter.com" target="_blank"><img src="./images/twitter.svg" class="footer_img" alt="logo_twitter"></a>
+			</div>
+
+			<div class="col-3" >
+				<a href="http://instagram.com" target="_blank"><img src="./images/instagram.svg" class="footer_img" alt="logo_instagram"></a>
+			</div>
+		</div>
+		<p>©Copyright 2021. Tous droits réversés.</p>
+	</footer>
 </body>
+
 </html>
