@@ -1,142 +1,163 @@
 <!DOCTYPE html>
 <html lang="fr">
-	<head>
-		<meta charset="utf-8">
-		<title>Contact</title>
-		<link rel="stylesheet" type="text/css" href="./css/contact.css">
-		<link rel="stylesheet" href="./css/grille_chota.css" />
-		<link rel="icon" href="./images/logo.png">
-
-	</head>
-
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="icon" href="./images/logo.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+</head>
 <body>
-	<header>
-		<p><img id="logo" src="./images/logo.png" alt="logo site"></p>
-		<h1 class="titre"> <a href="./index.html">Sm'Art</a></h1>
 
-		<!-- Barre de navigation -->
-		<nav>
-			<div class="row">             
-				<div class="col-3">
-          			<a href="./index.html">Acceuil</a>
-       			</div>
+<!-- Barre de navigation -->
 
-				<div class="col-3">
-					<a href="./shop.php">Boutique</a>
-				</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-				<div class="col-3">
-					<a href="./panier.html">Panier</a>
-				</div>
+    <div class="navbar-brand"><a href="./index.php"><img id="logo" src="./images/logo.png" alt="logo site"></a></div>
 
-				<div class="col-3">
-					<a href="./contact.html">Contact</a>
-				</div>
-			</div>
-		</nav>
-			<!-- Fin de la barre de navigation -->
-	</header>
+    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-	<main>
-		<div class="row">	
-			<section class="col-6">
-				<h2>Formulaire de contact</h2>
-				<form action="https://real-mmi-grenoble.fr/tmp/testformulaire.php" method="post">
-					<p>
-						<label for="name">Votre nom complet <span class="required">*</span></label><br>
-						<input type="text" id="name" name="Nom" placeholder="Prénom et nom de famille" required>
-		
-					</p>
-		
-					<p>
-						<label for="email">Votre adresse e-mail <span class="required">*</span></label><br>
-						<input type="email" id="email" name="Email" required>
-					</p>
-		
-					<p>
-						<label for="tel">Votre n° de téléphone</label><br>
-						<input type="tel" id="tel" name="Telephone">
-					</p>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-					<p>
-						<label for="Objet-Demande">Objet de votre message <span class="required">*</span></label><br>
-						<select name="Objet-demande" id="Objet-Demande" required>
-							<option value="default" disabled="" selected=""> </option>
-							<option value="commande">Une commande</option>
-							<option value="compte">Votre compte</option>
-							<option value="divers">Divers</option>
-						</select>
-					</p>
-		
-					<p>
-						<label for="num-comm">Numero de votre commande</label><br>
-						<input type="number" id="num-comm" name="Numero-commande">
-					</p>
-		
-					<p> 
-						<label for="message">Votre message<span class="required">*</span></label><br>
-						<textarea id="message" name="Message" rows="10" cols="50" placeholder="Saisissez ici votre message" required></textarea>
-					</p>
+        <div class="navbar-nav mr-auto">
+            <div class="nav-item">
+                <a class="nav-link" href="./index.php">Acceuil</a>
+            </div>
 
-					<p>
-						<input type="submit" name="Envoyer" class="submit-button">
-					</p>
+            <div class="nav-item">
+                <a class="nav-link" href="./shop.html">Boutique</a>
+            </div>
 
-					<p class="legende">
-						<span class="required">*</span> Champs obligatoires
-					</p>
-				</form>
-			</section>
+            <div class="nav-item">
+                <a class="nav-link" href="./panier.php">Panier</a>
+            </div>
+
+            <div class="nav-item">
+                <a class="nav-link activel" href="./contact.html">Contact</a>
+            </div>
+
+            <div class="nav-item">
+                <a class="nav-link" href="./connexion.php">Connexion</a>
+            </div>
+
+            <div class="nav-item">
+                <a class="nav-link" href="./inscription.html">Inscription</a>
+            </div>
+        </div>
+
+    </div>
+</nav>
 
 
-			<section class="col-6">
+<!-- Fin de la barre de navigation -->
 
-				<h2>Contactez-nous</h2>
+<main>
+    <div class="container">
+        <div class="row">
+            <section class="col-6">
+                <h2>Formulaire de contact</h2>
+                <form action="" method="post">
+                    <p>
+                        <label for="name">Votre nom complet <span class="required">*</span></label><br>
+                        <input type="text" id="name" name="Nom" placeholder="Prénom et nom de famille" required>
 
-				<h3><img src="./images/location-pin.svg" alt="localisation" class="icone"> Notre adresse</h3>
-				<address>Rue Marie Louise, 13009 Marseille</address>
+                    </p>
 
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2906.0020387472246!2d5.3889001153647715!3d43.25137907913715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9c762d66cb219%3A0x50772e808b832543!2s2%20Rue%20Marie%20Louise%2C%2013008%20Marseille!5e0!3m2!1sfr!2sfr!4v1640902057580!5m2!1sfr!2sfr" 
-				width="300" height="200" style="border:0" allowfullscreen="" loading="lazy"></iframe>
+                    <p>
+                        <label for="email">Votre adresse e-mail <span class="required">*</span></label><br>
+                        <input type="email" id="email" name="Email" required>
+                    </p>
 
-				<h3> <img src="./images/phone.svg" alt="telephone" class="icone"> Notre service client</h3>
-				<address>
-					<a href="tel:+33456789012">04 56 78 90 12</a>
-					<br>Du lundi au vendredi<br>10h-12h/14h-17h
-				</address>
+                    <p>
+                        <label for="tel">Votre n° de téléphone</label><br>
+                        <input type="tel" id="tel" name="Telephone">
+                    </p>
 
-				<h3><img src="./images/email.svg" alt="email" class="icone"> Notre adresse e-mail</h3>
-				<address>  
-					<a href="mailto:contact@smart.com">contact@smart.com</a><br>
-				</address>
-				
-			</section>
+                    <p>
+                        <label for="Objet-Demande">Objet de votre message <span class="required">*</span></label><br>
+                        <select name="Objet-demande" id="Objet-Demande" required>
+                            <option value="" disabled="" selected="" hidden="">Que concerne votre message ?</option>
+                            <option value="commande">Une commande</option>
+                            <option value="produit">Un produit</option>
+                            <option value="compte">Votre compte</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </p>
 
-		</div>
-	</main>
-	
+                    <p>
+                        <label for="num-comm">Numero de votre commande</label><br>
+                        <input type="number" id="num-comm" name="Numero-commande" placeholder="Remplir uniquement si votre message concerne une commande">
+                    </p>
 
-	<footer>
-		<p>Rejoignez-nous</p>
-		<div class="row liens">
-			<div class="col-3" >
-				<a href="http://facebook.com" target="_blank"><img src="./images/facebook.svg" class="footer_img" alt="logo_facebook"></a>
-			</div>
+                    <p>
+                        <label for="message">Votre message<span class="required">*</span></label><br>
+                        <textarea id="message" name="Message" rows="10" cols="50" placeholder="Saisissez ici votre message" required></textarea>
+                    </p>
 
-			<div class="col-3" >
-				<a href="http://pinterest.fr" target="_blank"><img src="./images/pinterest.svg" class="footer_img" alt="logo_pinterest"></a>
-			</div>
+                    <p>
+                        <input type="submit" name="Envoyer" class="submit-button">
+                    </p>
 
-			<div class="col-3" >
-				<a href="http://twitter.com" target="_blank"><img src="./images/twitter.svg" class="footer_img" alt="logo_twitter"></a>
-			</div>
+                    <p class="legende">
+                        <span class="required">*</span> Champs obligatoires
+                    </p>
+                </form>
+            </section>
 
-			<div class="col-3" >
-				<a href="http://instagram.com" target="_blank"><img src="./images/instagram.svg" class="footer_img" alt="logo_instagram"></a>
-			</div>
-		</div>
-		<p>©Copyright 2021. Tous droits réversés.</p>
-	</footer>
 
+            <section class="col-6">
+
+                <h2>Contactez-nous</h2>
+
+                <h3><img src="./images/location-pin.svg" alt="localisation" class="icone"> Notre adresse</h3>
+                <address>Rue Marie Louise, 13009 Marseille</address>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2906.0020387472246!2d5.3889001153647715!3d43.25137907913715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9c762d66cb219%3A0x50772e808b832543!2s2%20Rue%20Marie%20Louise%2C%2013008%20Marseille!5e0!3m2!1sfr!2sfr!4v1640902057580!5m2!1sfr!2sfr"
+                        width="500" height="400" style="border:0" allowfullscreen="" loading="lazy"></iframe>
+
+                <h3> <img src="./images/phone.svg" alt="telephone" class="icone"> Notre service client</h3>
+                <address>
+                    <a href="tel:+33456789012">04 56 78 90 12</a>
+                    <br>Du lundi au vendredi<br>10h-12h/14h-17h
+                </address>
+
+                <h3><img src="./images/email.svg" alt="email" class="icone"> Notre adresse e-mail</h3>
+                <address>
+                    <a href="mailto:contact@smart.com">contact@smart.com</a><br>
+                </address>
+
+            </section>
+
+        </div>
+    </div>
+
+</main>
+
+
+<footer>
+    <p>Rejoignez-nous</p>
+    <div class="row liens">
+        <div class="col-3" >
+            <a href="http://facebook.com" target="_blank"><img src="./images/facebook.svg" class="footer_img" alt="logo_facebook"></a>
+        </div>
+
+        <div class="col-3" >
+            <a href="http://pinterest.fr" target="_blank"><img src="./images/pinterest.svg" class="footer_img" alt="logo_pinterest"></a>
+        </div>
+
+        <div class="col-3" >
+            <a href="http://twitter.com" target="_blank"><img src="./images/twitter.svg" class="footer_img" alt="logo_twitter"></a>
+        </div>
+
+        <div class="col-3" >
+            <a href="http://instagram.com" target="_blank"><img src="./images/instagram.svg" class="footer_img" alt="logo_instagram"></a>
+        </div>
+    </div>
+    <p>©Copyright 2021. Tous droits réversés.</p>
+</footer>
+<script src="./lib/bootstrap/js/bootstrap.js"></script>
 </body>
 </html>

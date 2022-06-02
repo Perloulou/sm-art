@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Changer mdp</title>
+    <link rel="icon" href="./images/logo.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+</head>
+<body>
+
+<!-- Barre de navigation -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+    <div class="navbar-brand"><a href="./index.php"><img id="logo" src="./images/logo.png" alt="logo site"></a></div>
+
+    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <div class="navbar-nav mr-auto">
+            <div class="nav-item">
+                <a class="nav-link activel" href="./index.php">Acceuil</a>
+            </div>
+
+            <div class="nav-item">
+                <a class="nav-link" href="./shop.html">Boutique</a>
+            </div>
+
+            <div class="nav-item">
+                <a class="nav-link" href="./panier.php">Panier</a>
+            </div>
+
+            <div class="nav-item">
+                <a class="nav-link" href="./contact.html">Contact</a>
+            </div>
+
+            <div class="nav-item">
+                <a class="nav-link" href="./connexion.php">Connexion</a>
+            </div>
+
+            <div class="nav-item">
+                <a class="nav-link" href="./inscription.html">Inscription</a>
+            </div>
+        </div>
+
+    </div>
+</nav>
+
+<main>
+
+    <h2>Changer votre mot de passe</h2>
+
+    <form action="./php/form-modify.php" method="post">
+
+        <fieldset>
+            <p>
+                <label for="current_mdp">Mot de passe actuel</label>
+                <br/>
+                <input type="password" name="current_mdp" id="current_mdp" />
+            </p>
+
+            <p>
+                <label for="new_mdp">Nouveau mot de passe</label>
+                <br/>
+                <input type="password" name="new_mdp" id="new_mdp" class="new_password" />
+            </p>
+            <p>
+                <label for="new_mdp1">Re-taper nouveau mot de passe</label>
+                <br/>
+                <input type="password" name="new_mdp1" id="new_mdp1" class="new_password" />
+            </p>
+
+            <p>
+                <button type="submit" class="btn-modify">Changer le mot de passe</button>
+            </p>
+        </fieldset>
+
+    </form>
+
+</main>
+
+<footer>
+    <p>Rejoignez-nous</p>
+    <div class="row liens">
+        <div class="col-3" >
+            <a href="http://facebook.com" target="_blank"><img src="./images/facebook.svg" class="footer_img" alt="logo_facebook"></a>
+        </div>
+
+        <div class="col-3" >
+            <a href="http://pinterest.fr" target="_blank"><img src="./images/pinterest.svg" class="footer_img" alt="logo_pinterest"></a>
+        </div>
+
+        <div class="col-3" >
+            <a href="http://twitter.com" target="_blank"><img src="./images/twitter.svg" class="footer_img" alt="logo_twitter"></a>
+        </div>
+
+        <div class="col-3" >
+            <a href="http://instagram.com" target="_blank"><img src="./images/instagram.svg" class="footer_img" alt="logo_instagram"></a>
+        </div>
+    </div>
+    <p>©Copyright 2021. Tous droits réversés.</p>
+</footer>
+
+<script src="./lib/bootstrap/js/bootstrap.js"></script>
+</body>
+</html>

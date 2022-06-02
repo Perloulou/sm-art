@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscription</title>
+    <link rel="icon" href="./images/logo.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./lib/formvalidation/dist/css/formValidation.css" />
+</head>
+<body>
+
+<!-- Barre de navigation -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+    <div class="navbar-brand"><a href="./index.php"><img id="logo" src="./images/logo.png" alt="logo site"></a></div>
+
+    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <div class="navbar-nav mr-auto">
+            <div class="nav-item">
+                <a class="nav-link activel" href="./index.php">Acceuil</a>
+            </div>
+
+            <div class="nav-item">
+                <a class="nav-link" href="./shop.html">Boutique</a>
+            </div>
+
+            <div class="nav-item">
+                <a class="nav-link" href="./panier.php">Panier</a>
+            </div>
+
+            <div class="nav-item">
+                <a class="nav-link" href="./contact.html">Contact</a>
+            </div>
+
+            <div class="nav-item">
+                <a class="nav-link" href="./connexion.php">Connexion</a>
+            </div>
+
+            <div class="nav-item">
+                <a class="nav-link" href="./inscription.html">Inscription</a>
+            </div>
+        </div>
+
+    </div>
+</nav>
+
+
+<!-- Fin de la barre de navigation -->
+
+<main>
+    <h2>Inscription</h2>
+    <form id="form2" method="POST" action="./php/form-insert.php">
+        <fieldset>
+
+            <p>
+                <label for="mail">Email <span class="required">*</span></label><br>
+                <input id="mail" type="email" name="mail" />
+            </p>
+
+            <p>
+                <label for="login">Login <span class="required">*</span></label><br>
+                <input id="login" type="text" name="login" />
+            </p>
+
+            <p>
+                <label for="pswd">Mot de passe <span class="required">*</span></label><br>
+                <input id="pswd" type="password" name="pswd" />
+            </p>
+
+            <p>
+                <label for="nom">Nom <span class="required">*</span></label><br>
+                <input id="nom" type="text" name="nom" />
+            </p>
+
+            <p>
+                <label for="prenom">Prénom <span class="required">*</span></label><br>
+                <input id="prenom" type="text" name="prenom" />
+            </p>
+
+            <p  class="form-item">
+                <label for="agree">J'accepte les conditions d'utilisation (oblig.)</label>
+                <input type="checkbox" id="agree" class="agree" name="agree"/>
+            <div class="msgbox error"></div>
+            </p>
+
+        </fieldset>
+
+        <input type="submit" class="btn-inscription" name="Inscription">
+        <script>
+            window.onload = function (){
+                sweet();
+            }
+        </script>
+
+
+    </form>
+</main>
+
+<footer>
+    <p>Rejoignez-nous</p>
+    <div class="row liens">
+        <div class="col-3" >
+            <a href="http://facebook.com" target="_blank"><img src="./images/facebook.svg" class="footer_img" alt="logo_facebook"></a>
+        </div>
+
+        <div class="col-3" >
+            <a href="http://pinterest.fr" target="_blank"><img src="./images/pinterest.svg" class="footer_img" alt="logo_pinterest"></a>
+        </div>
+
+        <div class="col-3" >
+            <a href="http://twitter.com" target="_blank"><img src="./images/twitter.svg" class="footer_img" alt="logo_twitter"></a>
+        </div>
+
+        <div class="col-3" >
+            <a href="http://instagram.com" target="_blank"><img src="./images/instagram.svg" class="footer_img" alt="logo_instagram"></a>
+        </div>
+    </div>
+    <p>©Copyright 2021. Tous droits réversés.</p>
+</footer>
+<script src="./lib/formvalidation/dist/js/FormValidation.full.js"></script>
+<script src="./lib/formvalidation/dist/js/locales/fr_FR.js"></script>
+<script src="./lib/bootstrap/js/bootstrap.js"></script>
+
+<script src="./lib/sweetalert/sweetalert2.min.js"></script>
+<script src="./js/inscription.js"></script>
+</body>
+</html>
