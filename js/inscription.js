@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function (e) {
                         message: 'Email ne peut pas être vide',
                     },
                     emailAddress: {
-                        message: 'Format email incorrect',
+                        message: "Le format de l'email est incorrect",
                     },
                 },
             },
@@ -55,8 +55,8 @@ document.addEventListener('DOMContentLoaded', function (e) {
                         message: "Merci d'accepter les conditions d'utilisation",
                     },
 
-                }
-            }
+                },
+            },
         },
         plugins: {
             message: new FormValidation.plugins.Message({ clazz: 'error' }),
@@ -67,3 +67,16 @@ document.addEventListener('DOMContentLoaded', function (e) {
     });
 
 });
+
+
+
+
+function sweet() {
+            swal.fire({
+                    title: 'Compte crée !',
+                    icon: 'success',
+                    confirmButtonText: '<a href="./connexion.php">Se connecter</a>',
+                     confirmButtonColor: '#f2f2f2',
+
+            })
+    }
